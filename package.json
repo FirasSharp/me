@@ -1,0 +1,23 @@
+{
+  "name": "jelassi.me",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server --port=8080"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Friscas/jelassi.me.git"
+  },
+  "keywords": [],
+  "author": "Firas Jelassi <firasroudi@gmail.com> (https://jelassi.me/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Friscas/jelassi.me/issues"
+  },
+  "homepage": "https://github.com/Friscas/jelassi.me#readme",
+  "dependencies": {
+    "live-server": "^1.2.2"
+  }
+}

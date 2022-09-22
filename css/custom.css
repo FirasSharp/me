@@ -1,0 +1,80 @@
+html {
+  background-color: rgba(17, 24, 39, 1);
+  scroll-behavior: smooth;
+}
+
+header,
+body {
+  font-family: 'Ubuntu' !important;
+  color: whitesmoke !important;
+}
+
+.title {
+  color: whitesmoke !important;
+}
+
+.navbar {
+  background-color: transparent;
+  background-image: none;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.navbar .navbar-menu {
+  flex-grow: initial;
+  flex-shrink: initial;
+}
+
+@media only screen and (max-width: 1023px) {
+  .navbar {
+    display: contents !important;
+  }
+  .navbar-menu {
+    background-color: transparent !important;
+  }
+  .navbar-item {
+    color: aquamarine;
+  }
+}
+
+.is-250x250 {
+  width: 250px;
+  height: 250px;
+}
+
+.whoami {
+  background: rgb(255, 85, 0) !important;
+  margin-top: -10px;
+}
+
+.skills {
+  background: #2596be !important;
+  margin-top: -10px;
+}
+
+.footer {
+  height: 2rem !important;
+  background-color: #2596be !important;
+}
+
+.border {
+  border-width: 1px;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+  border-color: rgba(75, 85, 99, 1);
+}
+
+.social > a {
+  color: black !important;
+}
