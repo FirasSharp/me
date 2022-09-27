@@ -88,3 +88,18 @@ var myChart = new Chart(ctx, {
     },
   },
 });
+
+
+var mybutton = document.getElementById("myBtn");
+window.onscroll = function() {scrollFunction()};
+var scrollFunction = function () {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+};
+var topFunction = function () {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+};
