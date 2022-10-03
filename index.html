@@ -14,24 +14,31 @@
   <link rel="stylesheet" href="css/custom.css" />
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
 </head>
 <header>
-  <nav class="navbar" role="navigation" aria-label="main navigation">
-    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+  <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+    <a role="button" id="BurgerButton" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
     </a>
     <div id="navMenu" class="navbar-menu">
       <div class="navbar-item">
-        <a class="navbar-item" href="#home">
+        <a class="navbar-item" data-id="home" href="#home">
           Home
         </a>
-        <a class="navbar-item" href="#whoami">
+        <a class="navbar-item" data-id="whoami" href="#whoami">
           About
         </a>
-        <a class="navbar-item" href="#skills">
+        <a class="navbar-item" data-id="home"="skills" href="#skills">
           Skills
+        </a>
+        <a class="navbar-item" style="display: none;" href="art.html">
+          Art AI
         </a>
         <a class="navbar-item" target="_blank" href="https://github.com/FriscPlusPlus?tab=repositories">
           Github
@@ -44,6 +51,10 @@
 </header>
 
 <body>
+  <button id="TopNavButton" class="scrollButton" title="Go to top"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+      viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true" height="28">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+    </svg></button>
   <section class="section" id="home">
     <div class="columns is-centered is-mobile mt-6">
       <figure class="image is-250x250" style="margin: auto;">
@@ -82,7 +93,7 @@
         <p>I don't like to talk much about myself, this is why all I will say is that I love making friends and
           interacting with people; I like to program and I am a huge fan of the Open Source, and I am slowly starting to
           contribute to it. In my free time, I like to hang out with friends and family, play video games, program, and
-          mix music (mainly techno).
+          <a href="https://soundcloud.com/jey01" class="is-link">mix music</a> (mainly techno).
         </p>
       </div>
     </div>

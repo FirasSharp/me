@@ -1,0 +1,77 @@
+{
+    "type": "horizontalBar",
+    "data": {
+        "labels": [
+            "HTML&CSS",
+            "JavaScript",
+            "bash",
+            "C#",
+            "Java",
+            "Python",
+            "SAP"
+        ],
+        "datasets": [
+            {
+                "label": "Data",
+                "borderColor": {},
+                "borderWidth": 1,
+                "fill": true,
+                "backgroundColor": {},
+                "hoverBackgroundColor": {},
+                "data": [
+                    95,
+                    98,
+                    35,
+                    20,
+                    60,
+                    50,
+                    85
+                ]
+            }
+        ]
+    },
+    "options": {
+        "maintainAspectRatio": false,
+        "animation": {
+            "easing": "easeOutQuart"
+        },
+        "legend": {
+            "position": "bottom",
+            "display": false
+        },
+        "scales": {
+            "yAxes": [
+                {
+                    "ticks": {
+                        "fontColor": "#fafafa",
+                        "fontStyle": "bold",
+                        "beginAtZero": true,
+                        "padding": 15
+                    },
+                    "gridLines": {
+                        "drawTicks": false,
+                        "display": false,
+                        "color": "transparent",
+                        "zeroLineColor": "transparent"
+                    }
+                }
+            ],
+            "xAxes": [
+                {
+                    "gridLines": {
+                        "display": false,
+                        "color": "transparent",
+                        "zeroLineColor": "transparent"
+                    },
+                    "ticks": {
+                        "padding": 15,
+                        "beginAtZero": true,
+                        "fontColor": "#fafafa",
+                        "fontStyle": "bold",
+                        "maxTicksLimit": 20
+                    }
+                }
+            ]
+        }
+    }
+}
