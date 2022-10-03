@@ -14,11 +14,15 @@ body {
 }
 
 .navbar {
-  background-color: transparent;
+  background-color: #273F73;
   background-image: none;
   display: flex;
   align-content: center;
   justify-content: center;
+}
+
+.selectedView {
+  border-bottom: solid 1px;
 }
 
 .navbar .navbar-menu {
@@ -30,12 +34,14 @@ body {
   .navbar {
     display: contents !important;
   }
+
   .navbar-menu {
     background-color: transparent !important;
   }
-  .navbar-item {
-    color: aquamarine;
-  }
+}
+
+.navbar-item {
+  color: aquamarine;
 }
 
 .is-250x250 {
@@ -45,17 +51,12 @@ body {
 
 .whoami {
   background: rgb(255, 85, 0) !important;
-  margin-top: -10px;
+  margin-top: -12px;
 }
 
 .skills {
   background: #2596be !important;
-  margin-top: -10px;
-}
-
-.footer {
-  height: 2rem !important;
-  background-color: #2596be !important;
+  margin-top: -12px;
 }
 
 .border {
@@ -75,7 +76,7 @@ body {
   border-color: rgba(75, 85, 99, 1);
 }
 
-.social > a {
+.social>a {
   color: black !important;
 }
 
@@ -83,7 +84,7 @@ body {
   background-color: transparent !important;
 }
 
-#myBtn {
+#TopNavButton {
   display: none;
   position: fixed;
   bottom: 20px;
@@ -104,4 +105,19 @@ body {
   bottom: 0;
   right: 0;
   left: 0;
+}
+
+.command {
+  display: block;
+  background: wheat;
+  position: relative;
+  bottom: 0;
+}
+
+.card-image > figure {
+  cursor: pointer;
+}
+
+.navbar-burger>span{
+  color: antiquewhite;
 }
