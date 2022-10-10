@@ -34,27 +34,26 @@ const InitNavToTopButton = () => {
   return TopNavButton;
 }
 
-// ToDo, fix this method by getting the right position
-const SetSelectedView = (x, y) => {
-  const sections = document.getElementsByTagName("section");
-  let currentX, currentY;
-  for(let i = 0; i < sections.length; i++) {
-    currentX = sections[i].getBoundingClientRect().x;
-    currentY = sections[i].getBoundingClientRect().y;
-    if(currentX >= x && currentY == y) {
-      $(document.querySelector(`[data-id="${sections[i].id}"]`)).addClass(
-        'selectedView'
-      );
-    }
-  }
-};
-
 const SetNavToTopButtonStatus = () => {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     TopNavButton.style.display = "block";
   } else {
     TopNavButton.style.display = 'none';
   }
+}
+
+const actionNavbar = (e) => {
+  const burgers = document.getElementById('BurgerButton');
+  const target = burgers.dataset.target;
+  const $target = document.getElementById(target);
+  burgers.classList.toggle('is-active');
+  $target.classList.toggle('is-active');
+  setSelectedItem(e.currentTarget);
+}
+
+const setSelectedItem = (element) => {
+  $(document.getElementsByClassName('navbar-item')).removeClass('selectedView');
+  element.classList.toggle('selectedView');
 }
 
 
@@ -67,10 +66,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.onscroll = (oEv) => {
     SetNavToTopButtonStatus();
-   /* SetSelectedView(
-      oEv.currentTarget.screenX,
-      oEv.currentTarget.screenY,
-    );*/
   }
 });
 
