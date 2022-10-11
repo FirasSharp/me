@@ -122,3 +122,10 @@ body {
 .navbar-burger>span{
   color: antiquewhite;
 }
+
+a.navbar-item:hover {
+  background-color: transparent !important;
+  border-bottom: solid 1px !important;
+  text-decoration: unset !important;
+  color: aquamarine !important;
+}
