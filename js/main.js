@@ -56,6 +56,13 @@ const setSelectedItem = (element) => {
   element.classList.toggle('selectedView');
 }
 
+const SetCurrentHash = (currentYOffSet) => {
+  const sections = document.getElementsByTagName("section");
+  for(let i = 0; i < sections.length; i++) {
+    if (currentYOffSet >= sections[i].offsetTop - sections[i].offsetHeight / 2)
+    setSelectedItem(document.querySelectorAll(`[data-id="${sections[i].id}"]`)[0]);
+  }
+}
 
 document.addEventListener('DOMContentLoaded', () => {
   NavbarSetup();
@@ -66,6 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.onscroll = (oEv) => {
     SetNavToTopButtonStatus();
+    SetCurrentHash(oEv.currentTarget.pageYOffset);
   }
 });
 
