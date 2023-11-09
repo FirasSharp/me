@@ -4,11 +4,12 @@
         "labels": [
             "HTML&CSS",
             "JavaScript",
+            "SAP (ABAP, UI5, CAP and much more)",
             "bash",
             "C#",
             "Java",
             "Python",
-            "SAP"
+            "C"
         ],
         "datasets": [
             {
@@ -19,13 +20,14 @@
                 "backgroundColor": {},
                 "hoverBackgroundColor": {},
                 "data": [
-                    95,
                     98,
+                    98,
+                    95,
                     35,
-                    20,
-                    60,
-                    50,
-                    85
+                    45,
+                    40,
+                    35,
+                    15
                 ]
             }
         ]
