@@ -1,3 +1,19 @@
+window.onload = () => {
+  console.log(`
+  __    __  ________  __        _______         __       __  ________ 
+  /  |  /  |/        |/  |      /       \       /  \     /  |/        |
+  $$ |  $$ |$$$$$$$$/ $$ |      $$$$$$$  |      $$  \   /$$ |$$$$$$$$/ 
+  $$ |__$$ |$$ |__    $$ |      $$ |__$$ |      $$$  \ /$$$ |$$ |__    
+  $$    $$ |$$    |   $$ |      $$    $$/       $$$$  /$$$$ |$$    |   
+  $$$$$$$$ |$$$$$/    $$ |      $$$$$$$/        $$ $$ $$/$$ |$$$$$/    
+  $$ |  $$ |$$ |_____ $$ |_____ $$ |            $$ |$$$/ $$ |$$ |_____ 
+  $$ |  $$ |$$       |$$       |$$ |            $$ | $/  $$ |$$       |
+  $$/   $$/ $$$$$$$$/ $$$$$$$$/ $$/             $$/      $$/ $$$$$$$$/ 
+                                                                      
+  aSBmZWVsIGxvbmxleQ==
+  `)
+};
+
 const NavbarSetup = () => {
   const burgers = document.getElementById('BurgerButton');
   burgers.addEventListener('click', () => {
@@ -58,9 +74,9 @@ const setSelectedItem = (element) => {
 
 const SetCurrentHash = (currentYOffSet) => {
   const sections = document.getElementsByTagName("section");
-  for(let i = 0; i < sections.length; i++) {
+  for (let i = 0; i < sections.length; i++) {
     if (currentYOffSet >= sections[i].offsetTop - sections[i].offsetHeight / 2)
-    setSelectedItem(document.querySelectorAll(`[data-id="${sections[i].id}"]`)[0]);
+      setSelectedItem(document.querySelectorAll(`[data-id="${sections[i].id}"]`)[0]);
   }
 }
 
