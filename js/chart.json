@@ -14,11 +14,11 @@
         "datasets": [
             {
                 "label": "Data",
-                "borderColor": {},
+                "borderColor": "transparent",
                 "borderWidth": 1,
                 "fill": true,
-                "backgroundColor": {},
-                "hoverBackgroundColor": {},
+                "backgroundColor": "#fafafa",
+                "hoverBackgroundColor": "transparent",
                 "data": [
                     98,
                     98,
@@ -34,6 +34,7 @@
     },
     "options": {
         "maintainAspectRatio": false,
+        "hover": {"mode" : "nearest"},
         "animation": {
             "easing": "easeOutQuart"
         },
