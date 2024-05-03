@@ -4,12 +4,13 @@
         "labels": [
             "HTML&CSS",
             "JavaScript",
-            "SAP",
+            "SAP (ABAP, ABAP oo ecc.)",
             "bash",
             "C#",
             "Java",
             "Python",
-            "C"
+            "C",
+            "Go"
         ],
         "datasets": [
             {
@@ -27,7 +28,8 @@
                     45,
                     40,
                     35,
-                    15
+                    75,
+                    95,
                 ]
             }
         ]
