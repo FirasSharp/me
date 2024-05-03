@@ -4,7 +4,7 @@
         "labels": [
             "HTML&CSS",
             "JavaScript",
-            "SAP (ABAP, ABAP oo ecc.)",
+            "SAP",
             "bash",
             "C#",
             "Java",
@@ -27,7 +27,7 @@
                     45,
                     40,
                     35,
-                    75
+                    15
                 ]
             }
         ]
