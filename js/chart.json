@@ -15,11 +15,11 @@
         "datasets": [
             {
                 "label": "Data",
-                "borderColor": "transparent",
+                "borderColor": "#ff5500",
                 "borderWidth": 1,
                 "fill": true,
                 "backgroundColor": "#fafafa",
-                "hoverBackgroundColor": "transparent",
+                "hoverBackgroundColor": "#ff5500",
                 "data": [
                     98,
                     98,
@@ -56,8 +56,8 @@
                     "gridLines": {
                         "drawTicks": false,
                         "display": false,
-                        "color": "transparent",
-                        "zeroLineColor": "transparent"
+                        "color": "#ff5500",
+                        "zeroLineColor": "#ff5500"
                     }
                 }
             ],
@@ -65,8 +65,8 @@
                 {
                     "gridLines": {
                         "display": false,
-                        "color": "transparent",
-                        "zeroLineColor": "transparent"
+                        "color": "#ff5500",
+                        "zeroLineColor": "#ff5500"
                     },
                     "ticks": {
                         "padding": 15,
